@@ -23,7 +23,7 @@ header {
 }
 
 header div {
-  width: 30%;
+  width: 33%;
 }
 
 a {
@@ -194,7 +194,11 @@ a {
   margin-top: 30px;
 }
 
-@media (max-width: 710px) {
+@media (max-width: 720px) {
+  .logo {
+    font-size: x-large;
+  }
+
   .caixa_sobre {
     flex-direction: column;
     justify-content: center;
@@ -226,5 +230,19 @@ a {
     width: 50px;
     height: 50px;
     margin-top: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .logo {
+    font-size: large;
+  }
+}
+
+@media (max-width: 380px) {
+  .social a img {
+    height: 12px;
+  }
+  .logo {
+    font-size: medium;
   }
 }
