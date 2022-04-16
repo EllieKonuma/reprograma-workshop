@@ -4,18 +4,21 @@
   border: 0;
   /* font-size: 100%; */
   /* font: inherit; */
+  /* text-decoration: none; */
   vertical-align: baseline;
 }
 
 body {
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
-  background-color: #fadcc7;
+  background-color: #F8F8F8;
   color: #1b1b1b;
 }
 
 header {
   display: flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
   justify-content: space-around;
   align-items: center;
   background-color: #f1f0ef;
@@ -159,16 +162,21 @@ a {
 
 .galeria {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  padding-top: 15px;
 }
 
+
 .imagem {
-  max-width: 90%;
-  border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px solid white;
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  /* max-width: 50%; */
+  border-radius: 15px;
+  margin: 5px;
 }
 
 .caixa_links {
@@ -192,6 +200,40 @@ a {
   width: 50px;
   height: 50px;
   margin-top: 30px;
+}
+
+.bio {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 15px;
+}
+
+.pfimg {
+  max-width: 25%;
+  border-radius: 15px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  margin: 10px;
+  border: 2px solid white;
+}
+
+.content {
+  text-align: left;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
+  text-transform: none;
 }
 
 @media (max-width: 720px) {
@@ -245,4 +287,16 @@ a {
   .logo {
     font-size: medium;
   }
+}
+
+.f-center {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
